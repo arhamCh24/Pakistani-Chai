@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CHAI |Pakistani Chai</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+
+<style>
+    .dropdownhov:hover .dropdown-menu {
+        display: block;
+    }
+
+    body {
+        height: 100%;
+    }
+</style>
+
+
+<body>
+    <nav class="navbar sticky-top navbar-light bg-dark">
+        <a class="navbar-brand text-center fs-5 fst-italic text-light mx-2" href="index.html"> <b><b>P</b></b>AKISTANI
+            CHAI
+        </a>
+
+        <ul class="navbar-nav mx-1 my-1">
+            <div>
+                <a href="login.html">
+
+                    <button class="btn btn-danger">Login</button>
+                </a>
+
+                <a href="signup.html">
+                    <button class="btn btn-danger">Sign up</button>
+                </a>
+
+                <!-- cart -->
+
+
+                <button class="btn btn-outline-danger" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="20" fill="currentColor"
+                        class="bi bi-cart" viewBox="0 0 16 16">
+                        <path
+                            d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z">
+                        </path>
+                    </svg>
+                </button>
+
+                <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvasRight"
+                    aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header ">
+
+                        <button type="button" class="btn-close bg-light" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                        <h3 class="offcanvas-title  mx-auto text-light" id="offcanvasRightLabel"><b>Your Cart</b></h3>
+                    </div>
+                    <div class="offcanvas-body " style="background: linear-gradient(#698c9c, #243b55);">
+                        <!-- List group -->
+                        <ul class="list-group list-group-lg list-group-flush my-4">
+                            <li class="list-group-item" style="background: linear-gradient(#6dabca, #7b99bd);">
+                                <div class="row align-items-center">
+                                    <div class="col-4">
+
+                                        <!-- Image -->
+                                        <a href="Desserts.html">
+                                            <img class="img-fluid" src="desserts/brownie.jpg" alt="...">
+                                        </a>
+
+                                    </div>
+                                    <div class="col-8">
+
+                                        <!-- Title -->
+                                        <p class="fs-sm fw-bold mb-6">
+                                            <a class="text-body" href="Desserts.html">Chocolate Brownie</a> <br>
+                                            <span class="text-muted">$29.00</span>
+                                        </p>
+
+                                        <!--Footer -->
+                                        <div class="d-flex align-items-center">
+
+                                            <!-- Select -->
+                                            <select class="form-select form-select-xxs w-auto">
+                                                <option value="1">1</option>
+                                                <option value="1">2</option>
+                                                <option value="1">3</option>
+                                            </select>
+
+                                            <!-- Remove -->
+                                            <a class="fs-xs text-gray-400 ms-auto">
+                                                <i class="fe fe-x" aria-label="remove"></i> Remove
+                                            </a>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item" style="background: linear-gradient(#6dabca, #7b99bd);">
+                                <div class="row align-items-center">
+                                    <div class="col-4">
+
+                                        <!-- Image -->
+                                        <a href="#">
+                                            <img class="img-fluid" src="chai/specailChai.jpg" alt="...">
+                                        </a>
+
+                                    </div>
+                                    <div class="col-8">
+
+                                        <!-- Title -->
+                                        <p class="fs-sm fw-bold mb-6" id="abc">
+                                            <a class="text-body" href="chai.html">Special Chai</a> <br>
+                                            <span class="text-muted">$9.00</span>
+                                        </p>
+
+                                        <!--Footer -->
+                                        <div class="d-flex align-items-center">
+
+                                            <!-- Select -->
+                                            <select class="form-select form-select-xxs w-auto">
+                                                <option value="1">1</option>
+                                                <option value="1">2</option>
+                                                <option value="1">3</option>
+                                            </select>
+
+                                            <!-- Remove -->
+                                            <a class="fs-xs text-gray-400 ms-auto" href="#">
+                                                <i class="fe fe-x"></i> Remove
+                                            </a>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <!-- Footer -->
+                        <div class="offcanvas-footer justify-between lh-fixed fs-sm bg-light mt-auto bg-light">
+                            <strong>Subtotal</strong> <strong class="ms-auto">$38.00</strong>
+                        </div>
+
+                        <!-- Buttons -->
+                        <div class="offcanvas-body">
+                            <a class="btn w-100 btn-dark" href="#">Continue to Checkout</a>
+                            <a class="btn w-100 btn-outline-dark mt-2" href="#">View Cart</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            </div>
+            </div>
+        </ul>
+    </nav>
+
+    <nav class="navbar navbar-expand-xl navbar-expand-lg bg-light ">
+        <div class="container-fluid px-3 px-xl-5">
+            <!-- Logo START -->
+            <a class="navbar-brand" href="index.html">
+                <img class="light-mode-item navbar-brand-item" width="120vw" src="Logo/Tittle.1.png" alt="logo">
+            </a>
+            <!-- Logo END -->
+
+            <!-- Responsive navbar toggler -->
+            <button class="navbar-toggler ms-auto mx-2" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-animation">
+                    <span class="navbar-toggler-icon"></span>
+                </span>
+            </button>
+
+            <!-- Main navbar START -->
+            <div class="navbar-collapse w-100 collapse bd-navbar " id="navbarCollapse">
+
+                <!-- Nav Main menu START -->
+                <ul class="navbar-nav navbar-nav-scroll me-auto navbar-brand mx-auto">
+                    <!-- Nav item 1 Demos -->
+                    <li class="nav-item dropdown dropdownhov ">
+                        <a class="nav-link  active " id="demoMenu" aria-haspopup="true" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">CHAI</a>
+
+                        <ul class="dropdown-menu" aria-labelledby="demoMenu">
+                            <li> <a class="dropdown-item active" href="chai.html">Regular Chai</a></li>
+                            <li> <a class="dropdown-item" href="chai.html">Special Chai</a></li>
+                            <li> <a class="dropdown-item" href="chai.html">Doodh Patti</a></li>
+                            <li> <a class="dropdown-item" href="chai.html">Kashmiri Chai</a></li>
+                            <li> <a class="dropdown-item" href="chai.html">Gur wali chai</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li> <a class="dropdown-item" href="chai.html">Cold Tea</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown dropdownhov">
+                        <a class="nav-link active" id="demoMenu" aria-haspopup="true" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">COFFEES</a>
+                        <ul class="dropdown-menu" aria-labelledby="demoMenu">
+                            <li> <a class="dropdown-item active" href="Coffee.html">Cappuccino</a></li>
+                            <li> <a class="dropdown-item" href="Coffee.html">Espresso</a></li>
+                            <li> <a class="dropdown-item" href="Coffee.html">Hot Chocolate</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li> <a class="dropdown-item" href="Coffee.html">Cappuccino Cold Coffee</a></li>
+                            <li> <a class="dropdown-item" href="Coffee.html">Chocolate Mint Coffee</a></li>
+                            <li> <a class="dropdown-item" href="Coffee.html">Iced Latte Coffee</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown dropdownhov">
+                        <a class="nav-link active" id="demoMenu" aria-haspopup="true" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">DESSERTS</a>
+                        <ul class="dropdown-menu" aria-labelledby="demoMenu">
+                            <li> <a class="dropdown-item active" href="Desserts.html">Chocolate Mousse</a></li>
+                            <li> <a class="dropdown-item" href="Desserts.html">Blueberry Cake</a></li>
+                            <li> <a class="dropdown-item" href="Desserts.html">Brown Bread Loaf</a></li>
+                            <li> <a class="dropdown-item" href="Desserts.html">skillet cookie</a></li>
+                            <li> <a class="dropdown-item" href="Desserts.html">Chocolate Brownie</a></li>
+                        </ul>
+                    </li>
+            </div>
+        </div>
+        <!-- Main navbar END -->
+    </nav>
+
+    <div class="container my-4">
+        <div class="row featurette d-flex justify-content-center align-items-center">
+            <div class="col-md-7">
+                <h5 class="featurette-heading">Regular <span class="text-muted">Chai</span></h5>
+                <p class="lead">Tea is an aromatic beverage prepared by pouring hot or boiling water over cured
+                    or fresh leaves of Camellia sinensis, an evergreen shrub native to Pakistan, India and other
+                    East Asian countries
+                <pre class="fs-3">$4</pre>
+                </p>
+                <div class="card-footer ">
+                    <a href="" class="btn btn-outline-success" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasRight">Add to Cart</a>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <img class="img-fluid" src="chai/simplechai.png" alt="CHAI Images!">
+
+            </div>
+        </div>
+        <div class="row featurette d-flex justify-content-center align-items-center">
+            <div class="col-md-7 order-md-2">
+                <h5 class="featurette-heading">Special <span class="text-muted">Chai</span></h5>
+                <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis
+                    euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus,
+                    tellus ac cursus commodo.
+                <pre class="fs-3">$9</pre>
+                </p>
+                <div class="card-footer ">
+                    <a href="#" class="btn btn-outline-success" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasRight">Add to Cart</a>
+                </div>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <img class="img-fluid" src="chai/specailChai.jpg" alt="CHAI Images!">
+
+            </div>
+        </div>
+        <div class="row featurette d-flex justify-content-center align-items-center">
+            <div class="col-md-7">
+                <h5 class="featurette-heading">Doodh <span class="text-muted">Patti</span></h5>
+                <p class="lead">Doodh patti is a beverage that nobody can resist. It is purely made of milk and tea
+                    without any interference of water.It is very famous in Pakistan.
+                <pre class="fs-3">$11</pre>
+                </p>
+                <div class="card-footer ">
+                    <a href="#" class="btn btn-outline-success" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasRight">Add to Cart</a>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <img class="img-fluid" src="chai/doodhPatti.jpg" alt="CHAI Images!">
+
+            </div>
+        </div>
+
+        <div class="row featurette d-flex justify-content-center align-items-center">
+            <div class="col-md-7 order-md-2">
+                <h5 class="featurette-heading">Kashmiri <span class="text-muted">Chai</span></h5>
+                <p class="lead">Often called Pink Tea, Kashmiri chai is a milk tea characterized by its dusty pink color
+                    and garnishing of crushed nuts. It's brewed with green tea leaves and baking soda, and then mixed
+                    with milk to give it a distinct pink color.
+                <pre class="fs-3">$15</pre>
+                </p>
+                <div class="card-footer ">
+                    <a href="#" class="btn btn-outline-success" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasRight">Add to Cart</a>
+                </div>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <img class="img-fluid" src="chai/kashmiriChai.png" alt="CHAI Images!">
+
+            </div>
+        </div>
+
+        <div class="row featurette d-flex justify-content-center align-items-center">
+            <div class="col-md-7">
+                <h5 class="featurette-heading">Gur Wali <span class="text-muted">Chai</span></h5>
+                <p class="lead">Gur Ki Chai is a refreshing, healthy drink made by replacing sugar with Gur in the
+                    making of regular tea and flavouring it with different taste.
+                <pre class="fs-3">$15</pre>
+                </p>
+                <div class="card-footer ">
+                    <a href="#" class="btn btn-outline-success" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasRight">Add to Cart</a>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <img class="img-fluid" src="chai/gurwalichai.jpg" alt="CHAI Images!">
+
+            </div>
+        </div>
+
+        <div class="row featurette d-flex justify-content-center align-items-center">
+            <div class="col-md-7 order-md-2">
+                <h5 class="featurette-heading">Cold <span class="text-muted">Tea</span></h5>
+                <p class="lead">Iced tea (or ice tea) is a form of cold tea. Though it is usually served in a glass with
+                    ice, it can refer to any tea that has been chilled or cooled. It may be sweetened with sugar, syrup
+                    and/or apple slices.
+                <pre class="fs-3">$19</pre>
+                </p>
+                <div class="card-footer ">
+                    <a href="#" class="btn btn-outline-success" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasRight">Add to Cart</a>
+                </div>
+            </div>
+            <div class="col-md-5 order-md-1 my-2">
+                <img class="img-fluid" src="chai/coldtea.png" alt="CHAI Images!">
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Footer -->
+    <div class="container my-0  ">
+
+        <footer class="bg-light ">
+            <div class="container p-4">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 mb-4">
+                        <h4 class="mb-3" style="letter-spacing: 2px; color: #818963;"><b>PAKISTANI CHAI</b></h4>
+                        <p>
+                            Our Pakistani chai house, shop, or café is an establishment that primarily serves chai,
+                            coffee, and Desserts of various types, notably
+                            cold char, Kashmiri chai, espresso, latte, Skillet Cookie, and as well Brown Bread Loaf.
+                        </p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <h5 class="mb-3" style="letter-spacing: 2px; color: #818963;">links</h5>
+                        <ul class="list-unstyled mb-0">
+                            <li class="mb-1">
+                                <a href="contact.html" style="color: #4f4f4f;">Frequently Asked Questions</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <h5 class="mb-1" style="letter-spacing: 2px; color: #818963;">opening hours</h5>
+                        <table class="table" style="color: #4f4f4f; border-color: #666;">
+                            <tbody>
+                                <tr>
+                                    <td>Mon - Fri:</td>
+                                    <td>12pm - 2am</td>
+                                </tr>
+                                <tr>
+                                    <td>Sat - Sun:</td>
+                                    <td>12pm - 3am</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center p-3 text-primary background-color bg-dark">
+                © 2022 Copyright:
+                <a class="text-primary" href="index.html">Pakistani chai.com</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+
+    </div>
+
+
+    <!-- End of .container -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
